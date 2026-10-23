@@ -1,20 +1,20 @@
 class Ink < Formula
   desc "A terminal markdown reader that actually looks good"
   homepage "https://github.com/borghei/ink"
-  version "0.11.2"
+  version "0.12.0"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/borghei/ink/releases/download/v0.11.2/ink-macos-arm64"
-      sha256 "13104e7a39c419470fd50228943a11ff94a7a8445012c421188d9987f5780041"
+      url "https://github.com/borghei/ink/releases/download/v0.12.0/ink-macos-arm64"
+      sha256 "701354825d9ed978e072988538c905c9bb2ae8367efd4e25ad4db611d70a6550"
 
       def install
         bin.install "ink-macos-arm64" => "ink"
       end
     else
-      url "https://github.com/borghei/ink/releases/download/v0.11.2/ink-macos-amd64"
-      sha256 "32ca1b7ed6e11b97864adc1af5f12dc625b29d986fd8462b157b94de4181d10f"
+      url "https://github.com/borghei/ink/releases/download/v0.12.0/ink-macos-amd64"
+      sha256 "9cbd132aa4f594937f0878cc4b0736b3a4d1d89d39c20a88abf76fc2de030e61"
 
       def install
         bin.install "ink-macos-amd64" => "ink"
@@ -24,15 +24,15 @@ class Ink < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/borghei/ink/releases/download/v0.11.2/ink-linux-arm64"
-      sha256 "e8480c716f13e2c076243f290ca23ad6b7efc5a3cced1290467042cfcd2e9eb3"
+      url "https://github.com/borghei/ink/releases/download/v0.12.0/ink-linux-arm64"
+      sha256 "9acba9ecc192864f76c2b87bb208d3efd2a4848e61d8fab8faf269dbafb74bc7"
 
       def install
         bin.install "ink-linux-arm64" => "ink"
       end
     else
-      url "https://github.com/borghei/ink/releases/download/v0.11.2/ink-linux-amd64"
-      sha256 "7242256a9c67ee634876dd05e3273e74244d7fb22579a3923ee8e6d5582091a3"
+      url "https://github.com/borghei/ink/releases/download/v0.12.0/ink-linux-amd64"
+      sha256 "f453f0805b44cc14a6f823e07aa96968d2c2aa06365befa1cd6de8b02b913d61"
 
       def install
         bin.install "ink-linux-amd64" => "ink"
